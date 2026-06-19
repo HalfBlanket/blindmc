@@ -73,7 +73,7 @@ export async function POST(req: NextRequest) {
   };
 
   const discordFd = new FormData();
-  discordFd.append("payload_json", JSON.stringify({ embeds: [embed] }));
+  discordFd.append("payload_json", JSON.stringify({ content: "<@926107353873518602>", embeds: [embed] }));
   discordFd.append("files[0]", proof, filename);
 
   const res = await fetch(webhook, { method: "POST", body: discordFd });
