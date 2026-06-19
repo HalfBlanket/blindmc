@@ -21,7 +21,7 @@ export default function LandingPage() {
 
   const copyPort = (e: React.MouseEvent) => {
     e.stopPropagation();
-    navigator.clipboard.writeText("19132");
+    navigator.clipboard.writeText("2083");
     setCopiedPort(true);
     setTimeout(() => setCopiedPort(false), 2000);
   };
@@ -82,7 +82,7 @@ export default function LandingPage() {
         {/* Port row */}
         <div className="flex items-center gap-2 bg-black/30 border border-white/10 hover:border-red-500/30 rounded-lg px-4 py-2 transition-colors duration-300">
           <span className="text-white/40 text-[9px] tracking-[0.4em] uppercase">Port:</span>
-          <span className="text-white font-mono text-sm font-semibold tracking-widest animate-pulse-subtle">19132</span>
+          <span className="text-white font-mono text-sm font-semibold tracking-widest animate-pulse-subtle">2083</span>
           <button
             onClick={copyPort}
             className="ml-1 text-white/30 hover:text-red-400 transition-colors duration-200"
